@@ -98,20 +98,21 @@ def beautify(datacontent):
         for x in datacontent:
             print(x)
 
-def next():
+def next(code="CA"):
     day = dcudates.getday()
     time = dcudates.nexttime()
     if time in days:
-        print(time)
-        print(beautify(run(time)))
+        return run(time, None, code)
     else:
-        print(beautify(run(day, time)))
+        return run(day, time, code)
+
 def main():
     while True:
         print("Enter a Day")
         day = input()
         if day == "next":
-            next()
+            code = input()
+            print(beautify(next(code)))
             continue
         if day not in days:
             print("Warning: Day not valid if entered")

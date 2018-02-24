@@ -28,5 +28,6 @@ def nexttime():
             minute = 30
         else:
             minute = 0
+        hour += 1
         s = str(hour)+":"+str(minute)+"0"
         return s

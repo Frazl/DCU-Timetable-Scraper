@@ -29,7 +29,7 @@ Import bs4dcu into your own script.
 Call the run function like the example below
 
 ```
-bs4dcu.run("mon", "11:00", "CA")
+bs4dcu.run("mon", "10:00", "CA", "1")
 ```
 
 ### Functions
@@ -52,7 +52,7 @@ If run returns a list, a time has been given and the list will contain the possi
 e.g. Return for a list 
 
 ```
-run("Thu","11:00")
+run("Thu","11:00", "CA", "1")
 
 ['Digital Innovation Management and Enterprise In GLA.L125, GLA.L128 With Ward M', 'Digital Innovation Management and Enterprise In GLA.QG15 With ANOTHER for MW']
 ```
@@ -60,7 +60,7 @@ run("Thu","11:00")
 #### Usage
 
 ```
-run(day, time, code)
+run(day, time, code, year)
 ````
 day: ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 
@@ -70,7 +70,9 @@ e.g 17:00 and 14:30 but *not 14:31*
 
 code (optional): Module code, e.g. CA = Computer Applications, AF = Accounting Finance 
 
-*Note: code defaults to CA if none entered*
+Year(optional): The year code for the module, e.g. 1,2,3,4 (Must be in string format)
+
+*Note: code defaults to CA if none entered and year defaults to 1*
 
 ### next
 
@@ -87,12 +89,15 @@ e.g. If it is currently 10AM it will see what is on at 11AM and send that back.
 #### Usage
 
 ```
-next(code)
+next(code year)
 ```
 
-code(optional): Module code, e.g. CA = Computer Applications, AF = Accounting Finance 
+code(optional): Module code, e.g. CA = Computer Applications, AF = Accounting Finance
 
-*Note: code defaults to CA if none entered*
+year(optional): The year code for the module, e.g. 1,2,3,4 (Must be in string format) 
+
+*Note: code defaults to CA if none entered and year defaults to 1*
+
 
 ### beautify
 
@@ -102,7 +107,7 @@ Beautify takes data i.e a list or dictionary and prints it out nicely.
 
 The main function of this is for testing and for standalone functionality.
 
-e.g. beautify(run("Mon","11:00","AF")) *More examples can be seen in the main() function // Run bs4dcu.py*
+e.g. beautify(run("Mon","11:00","AF", "1")) *More examples can be seen in the main() function // Run bs4dcu.py*
 
 #### Usage 
 

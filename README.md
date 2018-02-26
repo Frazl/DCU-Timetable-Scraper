@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Frazl/DCU-Timetable-Scraper.svg?branch=master)](https://travis-ci.org/Frazl/DCU-Timetable-Scraper)
+
 ## Description 
 
 This program/module scrapes DCU's timetable and returns information based on the day, course and time. 

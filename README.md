@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/Frazl/DCU-Timetable-Scraper.svg?branch=master)](https://travis-ci.org/Frazl/DCU-Timetable-Scraper)
+[![Build Status](https://travis-ci.org/Frazl/DCU-Timetable-Scraper.svg?branch=master)](https://travis-ci.org/Frazl/DCU-Timetable-Scraper) [![Maintainability](https://api.codeclimate.com/v1/badges/e77e7906a9e080dba93d/maintainability)](https://codeclimate.com/github/Frazl/DCU-Timetable-Scraper/maintainability)
 
 ## Description 
 
 This program/module scrapes DCU's timetable and returns information based on the day, course and time. 
 
-This program is intented to be used as a module. Although it does run standalone it was designed to be used in conjunction with a facebook messenger bot.
+This program is intented to be used as a module. Although it does run standalone it was designed to be used in conjunction with a Facebook messenger bot.
 
 This program was made using **Python 3.6.4**
 

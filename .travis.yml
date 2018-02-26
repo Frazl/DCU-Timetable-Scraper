@@ -1,4 +1,8 @@
 language: python
 rvm:
  - 3.6.4
- - BeautifulSoup4
+ install:
+  - pip install BeautifulSoup4
+  script:
+    tests
+  

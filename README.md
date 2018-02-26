@@ -89,7 +89,7 @@ e.g. If it is currently 10AM it will see what is on at 11AM and send that back.
 #### Usage
 
 ```
-next(code year)
+next(code, year)
 ```
 
 code(optional): Module code, e.g. CA = Computer Applications, AF = Accounting Finance
@@ -117,7 +117,38 @@ beautify(datacontent)
 
 datacontent: A list or dictionary - * Dictionary must be using keys times.keys() *
 
+### responsehandler
 
+#### Description
+
+Takes in a list and returns neatly formatted text in the form of a string
+
+### Usage
+
+```
+l = run("Mon","11:00","CA","1")
+s = responsehandler(l)
+```
+
+l: a list usually from run or next functions.
+
+### dictionaryhandler
+
+### Description
+
+Returns neartly formatted text from a dictionary in the form of a string. Usually data should be from the run function.
+If there is nothing on that day, i.e. the dictionary was empty then it returns the string "Nothing On Today".
+
+### Usage
+
+```
+d = run("Fri",None,"CA","1")
+s = dictionaryhandler(d)
+OR
+s = dictionaryhandler(run("Fri",None,"CA","1"))
+```
+
+d: A dictionary usally the result of run function.
 ## Contributors
 
 ### Seán Fradl (Fraz)

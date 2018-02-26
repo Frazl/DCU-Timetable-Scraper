@@ -4,4 +4,4 @@ python:
 install:
  - pip install BeautifulSoup4
 script:
- tests
+ tests.py

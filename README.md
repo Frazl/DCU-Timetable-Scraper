@@ -4,7 +4,10 @@ This program/module scrapes DCU's timetable and returns information based on the
 
 This program is intented to be used as a module. Although it does run standalone it was designed to be used in conjunction with a facebook messenger bot.
 
+This program was made using **Python 3.6.4**
+
 ## Dependencies
+
 BeautifulSoup 4 is required and is obtainable through pip.
 
 ```
@@ -31,7 +34,7 @@ bs4dcu.run("mon", "11:00", "CA")
 
 ### Functions
 
-### Run
+### run
 
 #### Description
 
@@ -73,7 +76,7 @@ code (optional): Module code, e.g. CA = Computer Applications, AF = Accounting F
 
 #### Description
 
-next runs run(day, time, code) with the current time and day and can return two things similiar to run.
+Next runs run(day, time, code) with the current time and day and can return two things similiar to run.
 
 If it is past 5:30PM next will return the timetable for tomorrow in the form of a dictionary with keys time.keys()
 
@@ -90,6 +93,25 @@ next(code)
 code(optional): Module code, e.g. CA = Computer Applications, AF = Accounting Finance 
 
 *Note: code defaults to CA if none entered*
+
+### beautify
+
+#### Description
+
+Beautify takes data i.e a list or dictionary and prints it out nicely. 
+
+The main function of this is for testing and for standalone functionality.
+
+e.g. beautify(run("Mon","11:00","AF")) *More examples can be seen in the main() function // Run bs4dcu.py*
+
+#### Usage 
+
+```
+beautify(datacontent)
+```
+
+datacontent: A list or dictionary - * Dictionary must be using keys times.keys() *
+
 
 ## Contributors
 

@@ -3,5 +3,6 @@ python:
  - "3.6.4"
 install:
  - pip install BeautifulSoup4
+ - pip install Requests
 script:
  - python tests.py
